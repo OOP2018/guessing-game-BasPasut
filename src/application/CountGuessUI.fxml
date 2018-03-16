@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CountGuessWindow">
+   <children>
+      <Label fx:id="lb" alignment="CENTER" contentDisplay="CENTER" prefHeight="250.0" prefWidth="250.0" text="0">
+         <font>
+            <Font name="Arvo" size="82.0" />
+         </font>
+      </Label>
+   </children>
+</FlowPane>

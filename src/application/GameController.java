@@ -1,6 +1,5 @@
 package application;
 
-import guessinggame.BasGame;
 import guessinggame.NumberGame;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,7 +20,7 @@ public class GameController {
 			ans = Integer.parseInt(tf.getText().trim());
 		} catch (Exception e) {
 			tf.setText("Invalid");
-			hint.setText("Invalid input try again jaa.");
+			hint.setText("Invalid input try again later.");
 		}
 		if (game.guess(ans) == false) {
 			hint.setText(String.format("%s ", ans) + game.getMessage());
