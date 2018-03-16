@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<FlowPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <Label alignment="TOP_CENTER" text="GUESSING GAME" textFill="#ffcb4f">
+         <font>
+            <Font name="Arvo" size="39.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </FlowPane.margin>
+      </Label>
+      <Label alignment="TOP_CENTER" text="Guess the number between 1 to 100">
+         <font>
+            <Font name="Arvo" size="24.0" />
+         </font>
+         <FlowPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </FlowPane.margin>
+      </Label>
+      <Label fx:id="hint" alignment="TOP_CENTER" prefHeight="46.0" prefWidth="405.0" text="May the force be with you">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+      </Label>
+      <Pane prefHeight="50.0" prefWidth="322.0">
+         <children>
+            <Label alignment="TOP_CENTER" layoutX="-8.0" layoutY="-1.0" prefHeight="30.0" prefWidth="167.0" text="Your Answer ?">
+               <font>
+                  <Font name="Arvo" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf" layoutX="159.0" layoutY="2.0" onAction="#handleGuessing" />
+         </children>
+      </Pane>
+   </children>
+</FlowPane>
